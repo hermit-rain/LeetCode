@@ -42,7 +42,7 @@
 
 **解法一**
 
-```
+```java
 class Solution {
     public int search(int[] nums, int target) {
         int count = 0;
@@ -58,7 +58,7 @@ class Solution {
 
 **解法二**
 
-```
+```java
 class Solution {
     public int search(int[] nums, int target) {
         int midIndex = binarySearch(nums, 0, nums.length - 1, target);
