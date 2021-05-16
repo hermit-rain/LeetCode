@@ -7,7 +7,7 @@
  * }
  */
 class Solution {
-    public static int[] reversePrint(ListNode head) {
+    public int[] reversePrint(ListNode head) {
         Stack<ListNode>stack = new Stack<>();
         ListNode cur = head;
         while (cur != null) {
