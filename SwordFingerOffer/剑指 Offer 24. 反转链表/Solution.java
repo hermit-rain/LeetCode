@@ -33,6 +33,17 @@ class Solution {
     }
 
     //解法二
-
+    public ListNode reverseList(ListNode head) {
+        //递归退出的条件
+        if (head == null || head.next == null) {
+            return head;
+        }
+        //从头节点逐渐递归到尾节点
+        ListNode newHead = reverseList(head.next);
+        //递的过程结束后开始向上归并反转
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
 
 }
